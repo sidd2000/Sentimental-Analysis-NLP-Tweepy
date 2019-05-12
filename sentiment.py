@@ -6,10 +6,10 @@ from  nltk.stem import WordNetLemmatizer
 from  nltk.corpus   import  stopwords
 from textblob import TextBlob
 
-consumer_key="ysePhkKVzzyZvK8PX2DoRg1kv"
-consumer_secret="38VsKAd2iSGdeNxt43EdkG2m1wfDNI3uDEGSeczDNVxaLWwkiM"
-access_key="889506304225665024-vbGVSFzEvepFyYx2TQIkJ9UyvUaIOxR"
-access_secret="WiAJ5U5PRykOyHhL4Y9JUsRCw2mhoeGGlmADSFvVZmq58"
+consumer_key=""
+consumer_secret=""
+access_key=""
+access_secret=""
 
 def get_tweets(topic):
 	#authenticating twitter with consumer key and consumer  secret
