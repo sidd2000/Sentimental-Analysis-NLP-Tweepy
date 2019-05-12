@@ -22,7 +22,7 @@ access_key=""
 access_secret=""
 
 
-# In[41]:
+# In[49]:
 
 
 def get_tweets(topic):
@@ -61,10 +61,19 @@ def get_tweets(topic):
         tmp[i]=' '.join(newword)
     #print(tmp)
     '''
-    plt.bar(polarity,subjectivity,label="Sentiment Analysis")
+    for i in range(1,len(polarity)+1):
+        plt.bar(i,polarity[i-1],color='b')
+    plt.xlabel("Number of tweet")
+    plt.ylabel("Opinion of the tweet")
+    plt.show()
+    for i in range(1,len(subjectivity)+1):
+        plt.bar(i,subjectivity[i-1],color='r')
+    plt.xlabel("Number of tweet")
+    plt.ylabel("Subjectivity of the tweet")
+    plt.show()
 
 
-# In[44]:
+# In[50]:
 
 
 if __name__=='__main__':
@@ -72,13 +81,10 @@ if __name__=='__main__':
 get_tweets(data)
 
 
-# In[43]:
+# In[ ]:
 
 
-'''
-import sys
-topic=sys.argv(1)  then run using python3 tweet.py virat
-'''
+
 
 
 # In[ ]:
